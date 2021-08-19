@@ -7,22 +7,22 @@ import Icon3 from "../../images/svg-6.svg";
 export default function Features() {
     return (
         <ServicesContainer id="features">
-            <ServicesH1>Our Services</ServicesH1>
+            <ServicesH1>Our Features</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
-                    <ServicesH2>Lorum Ipsum</ServicesH2>
-                    <ServicesP>ipsu ip sumlor em w o lorem ipsum</ServicesP>
+                    <ServicesH2>Expand Your Mind</ServicesH2>
+                    <ServicesP>Browse our peer reviewed sleep studies</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
-                    <ServicesH2>Lorum Ipsum</ServicesH2>
-                    <ServicesP>ipsu ip sumlor em w o lorem ipsum</ServicesP>
+                    <ServicesH2>Better Sleep Anywhere</ServicesH2>
+                    <ServicesP>Download your sessions so you can sleep soundly anywhere</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesH2>Lorum Ipsum</ServicesH2>
-                    <ServicesP>ipsu ip sumlor em w o lorem ipsum</ServicesP>
+                    <ServicesH2>Waking Action</ServicesH2>
+                    <ServicesP>Use daytime meditation to achieve waking peace</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

@@ -7,7 +7,7 @@ import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/
 import Features from '../components/Features/index';
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function HomePage() {
 
 const [isOpen, setIsOpen] = useState(false);
 

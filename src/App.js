@@ -1,14 +1,14 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from './pages';
-import contact from './pages/contact';
+import HomePage from './pages';
+import contactPage from './pages/contact';
 
 function App() {
   return (
     <Router>
     <Switch>
-      <Route path="/" component={Home} exact />
-      <Route path="/contact" component={contact} exact />
+      <Route path="/" component={HomePage} exact />
+      <Route path="/contact" component={contactPage} exact />
     </Switch>
     </Router>
   );

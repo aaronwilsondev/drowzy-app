@@ -1,11 +1,15 @@
 import React from 'react'
 import { FooterContainer, FooterLink, FooterLinkItems, FooterLinksContainer, FooterLinksWrapper, FooterLinkTitle, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa";
-
+import {animateScroll as scroll} from "react-scroll";
 
 export default function Footer() {
 
     const todaysDate = new Date().getFullYear();
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
 
     return (
         <FooterContainer>
@@ -48,7 +52,7 @@ export default function Footer() {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to="/">
+                        <SocialLogo to="/" onClick={toggleHome}>
                             DrowZy
                         </SocialLogo>
                         <WebsiteRights>DrowZy © {todaysDate}</WebsiteRights>
