@@ -6,6 +6,7 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Features from '../components/Features/index';
 import Footer from '../components/Footer';
+import { FadeContainer } from '../components/Fade/FadeElements';
 
 export default function HomePage() {
 
@@ -20,6 +21,7 @@ const toggle = () => {
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle}/>
             <HeroSection />
+            <FadeContainer/>
             <InfoSection {...homeObjOne} />
             <InfoSection {...homeObjTwo} />
             <Features />
