@@ -31,7 +31,7 @@ margin-left: 32px;
 margin-top: 32px;
 text-decoration: none;
 color: #fff;
-font-weight: 100;
+font-weight: 600;
 font-size: 32px;
 
 @media screen and (max-width: 480px) {
