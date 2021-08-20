@@ -14,7 +14,7 @@ const onHover = () => {
     return (
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type="vide/mp4"/>
+                <VideoBg autoPlay loop muted playsinline src={Video} type="vide/mp4"/>
             </HeroBg>
             <HeroContent>
                 <HeroH1>
@@ -24,7 +24,13 @@ const onHover = () => {
                     Download today and reap the benifits of a Good nights rest Tonight
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button primary to="download" onMouseEnter={onHover} onMouseLeave={onHover} >
+                    <Button
+                     smooth={true}
+                     duration={500}
+                     spy={true}
+                     exact={true}
+                     offset={-80}
+                     primary to="download" onMouseEnter={onHover} onMouseLeave={onHover} >
                         Download {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>

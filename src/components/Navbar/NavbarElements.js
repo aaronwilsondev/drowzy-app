@@ -15,7 +15,7 @@ top: 0;
 z-index: 10;
 
 @media screen and (max-width: 960px) {
-    transition: 0ms.8s all ease;
+    transition: 0.4s all ease;
 }
 `
 export const NavbarContainer = styled.div`
